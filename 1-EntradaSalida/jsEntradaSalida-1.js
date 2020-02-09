@@ -1,12 +1,10 @@
 //Debemos lograr mostrar un mensaje al presionar el botón  'mostrar'.
 function mostrar()
 {	// Declaracion de VARIABLES
-	var primerPrecio;
-	var segundoPrecio;
-	var apellido = "nadie";
-
-	apellido = "Lenzuen";
-	alert(apellido);
+//	var apellido = "nadie";
+//
+//	apellido = "Lenzuen";
+//	alert(apellido);
 	// si esta entre comillas es un valor LITERAL
 	//alert("Tal cual");
 	//alert(apellido); // Variable
@@ -21,3 +19,12 @@ function mostrar()
 
 
 
+
+
+function mostrar(){
+	var apellido = " ";
+	
+	apellido = "Bisurgi";
+	
+	alert(apellido);
+}

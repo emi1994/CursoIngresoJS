@@ -8,7 +8,11 @@ function mostrar()
 	console.log(nombre); 
 	*/
 
-	var nombre = prompt("Ingresa tu nombre");
+//	var nombre = prompt("Ingresa tu nombre");
+//	console.log(nombre);
+	
+	var nombre = prompt("Ingrese su nombre aqui");
+	
 	console.log(nombre);
 }
 
