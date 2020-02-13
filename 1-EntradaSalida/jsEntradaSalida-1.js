@@ -22,9 +22,5 @@ function mostrar()
 
 
 function mostrar(){
-	var apellido = " ";
-	
-	apellido = "Bisurgi";
-	
-	alert(apellido);
+	// testeando git
 }
