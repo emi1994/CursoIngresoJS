@@ -1,7 +1,7 @@
-git clone https://github.com/emi1994/CursoIngresoJS.git
+git clone https://github.com/emi1994/CursoIngresoJS.git //Paso A
 
-git add .
+git add . //Paso B
 
-git commit -m "mensaje"
+git commit -m "mensaje" //Paso C
 
 git status 
