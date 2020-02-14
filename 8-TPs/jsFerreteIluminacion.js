@@ -10,5 +10,84 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
+	var cantidadLamparas;
+	var precioLampara = 35;
+	var precioBruto;
+	var precioDescuento = 0;
+	var marcaLampara;
+
+	cantidadLamparas = document.getElementById('Cantidad').value;
+	cantidadLamparas = parseInt(cantidadLamparas);
+
+	precioDescuento = document.getElementById("precioDescuento").value;
+	precioDescuento = parseInt(precioDescuento);
+
+	marcaLampara = document.getElementById('Marca').value;
+
+
+	if(cantidadLamparas > 5)
+	{
+		precioBruto = cantidadLamparas * precioLampara;
+		precioDescuento = precioBruto - (precioBruto * 50 /100);
+		document.getElementById("precioDescuento").value = precioDescuento;
+	}
+	if(cantidadLamparas == 5)
+	{
+		if(marcaLampara == "ArgentinaLuz")
+		{
+			precioBruto = cantidadLamparas * precioLampara;
+			precioDescuento = precioBruto - (precioBruto * 40 /100);
+			document.getElementById("precioDescuento").value = precioDescuento;
+		}else
+			if(marcaLampara !="ArgentinaLuz")
+			{
+				precioBruto = cantidadLamparas * precioLampara;
+				precioDescuento = precioBruto - (precioBruto * 30 /100);
+				document.getElementById("precioDescuento").value = precioDescuento;
+			}
+			
+	}
+
+
  	
 }
+
+
+// function CalcularPrecio () 
+// {
+// 	var cantidadLamparas;
+// 	var precioBruto;
+// 	var precioFinal;
+// 	var marcaLampara;
+
+
+// 	cantidadLamparas = document.getElementById('Cantidad').value;
+// 	cantidadLamparas = parseInt(cantidadLamparas);
+
+// 	marcaLampara=document.getElementById('Marca').value;
+// 	precioBruto= cantidadLamparas * 35;
+
+// 	if(cantidadLamparas > 5)
+// 	{
+// 		precioFinal = precioBruto - precioBruto * 50 / 100;
+// 		document.getElementById('precioDescuento').value = precioFinal;
+// 	}
+// 	if(cantidadLamparas == 5)
+// 	{
+// 		if (marca = "ArgentinaLuz") 
+// 		{
+// 			precioFinal = precioBruto - precioBruto * 40 / 100;
+// 			document.getElementById('precioDescuento').value = precioFinal;
+// 		}else
+// 		{
+// 			precioFinal = precioBruto - precioBruto * 30 / 100;
+// 			document.getElementById('precioDescuento').value = precioFinal;
+// 		}
+
+// 		precioFinal = precioBruto - precioBruto * 50 / 100;
+// 		document.getElementById('precioDescuento').value = precioFinal;
+// 	}
+
+
+// }
+
