@@ -23,6 +23,7 @@ function Sumar ()
 	resultadoSuma = primerItem + segundoItem + tercerItem;
 	alert(resultadoSuma);
 	
+	
 }
 function Promedio () 
 {
