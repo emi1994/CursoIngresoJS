@@ -4,8 +4,34 @@ function mostrar()
 	var contador=0;
 	var positivo=0;
 	var negativo=1;
-	
 	var respuesta='si';
+	var numeroIngresado;
+
+	while(respuesta == "si")
+	{
+		contador = contador + 1;
+		numeroIngresado = prompt("Ingrese su numero");
+		numeroIngresado = parseInt(numeroIngresado);
+		while(isNaN(numeroIngresado)){
+			numeroIngresado = prompt("Error: No es un numero");
+			numeroIngresado = parseInt(numeroIngresado);
+		}
+
+		if (numeroIngresado > 0) 
+			{
+				positivo = positivo + numeroIngresado;
+			}
+			else
+			{
+				if (numeroIngresado < 0) 
+				{
+					negativo = negativo * numeroIngresado;
+				}
+	        }
+		  respuesta = prompt("Ingrese SI para continuar");	
+	}
+
+
 
 
 document.getElementById('suma').value=positivo;
