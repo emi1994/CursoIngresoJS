@@ -2,7 +2,7 @@ function mostrar()
 {
 //tomo la edad  
 var laHora = document.getElementById('hora').value;
-laHora = parseInt(pa)
+laHora = parseInt(laHora);
     switch (laHora){
         case 7:
         case 8:
