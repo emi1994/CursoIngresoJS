@@ -1,8 +1,11 @@
 function mostrar()
 {
-	//tomo la edad  
+	//tomo la hora
 var laHora = document.getElementById('laHora').value;
-laHora = parseInt(laHora);
+//defino que es un numero entero
+laHora = parseInt(laHora); 
+
+//creo los distintos casos para el dato ingresado
     switch (laHora)
     {	
     	case 6:
@@ -25,16 +28,18 @@ laHora = parseInt(laHora);
         alert("Es de tarde");
         break;
 
-        case 20:
-        case 21:
-        case 22:
-        case 23:
-        case 24:
-        alert("Es de noche");
-
-        if(isNaN(laHora)){
-        	laHora = prompt("Ingrese una hora valida");
+        //creamos la logica dentro de los casos y mostramos mensaje
+        default:
+        if(laHora > 20 && laHora < 25){
+            alert("Es de noche");
+            alert("A mimir");
+        }else
+        {
+            // validamos
+            alert("La hora no es valida");
         }
+        break;
+
     }
 
 }
